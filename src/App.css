@@ -1,0 +1,114 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  height: 100vh;
+}
+
+.canvas {
+  background: #fff;
+}
+
+.sidebar {
+  padding: 14px;
+  border-left: 1px solid #eee;
+  overflow: auto;
+}
+
+.svg-root {
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+.model-layer {
+  cursor: grab;
+}
+
+.model-layer.dragging {
+  cursor: grabbing;
+}
+
+.grid-line {
+  stroke: #ddd;
+  stroke-width: 1;
+}
+
+.axis-line {
+  stroke: #000;
+  stroke-width: 2;
+}
+
+.axis-point {
+  fill: #000;
+}
+
+.axis-text {
+  font-size: 12px;
+  fill: #000;
+}
+
+.model-path {
+  fill: none;
+  stroke: #111;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.pivot {
+  fill: #e11;
+}
+
+.section-title {
+  margin-top: 0;
+  color: #fff;
+  font-weight: 500;
+}
+
+.hr {
+  margin: 16px 0;
+}
+
+.slider {
+  margin-bottom: 14px;
+}
+
+.slider-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.slider-label {
+  font-size: 13px;
+  color: #fff;
+}
+
+.slider-value {
+  color: #fff;
+}
+
+.slider-range {
+  width: 100%;
+}
+
+.slider-input {
+  width: 100%;
+  margin-top: 6px;
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+.btn {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
